@@ -1,4 +1,4 @@
-shopping_calculator = '''
+shopping_calculator = 
 # Shopping Calculator Template
 
 item_price = float(input("Enter item price: "))
