@@ -18,20 +18,20 @@ Below 18.5: Underweight
 """
 
 # input
-weight = float(intput("Enter weight is:"))
+weight = float(input("Enter weight is:"))
 height = float(input("Enter height is:"))
 
 # process
-BMI = weight / (hight ** 2)
+BMI = weight / (height ** 2)
 
 # output
-print ("BMI is:, {bmi:.1f}")
+print (f"BMI is:, {BMI:.1f}")
 
-  if bmi < 18.5:
+if BMI < 18.5:
     print("Category: Underweight")
-  elif 18.5 <= bmi <= 24.9:
+elif 18.5 <= BMI <= 24.9:
     print("Category: Normol weight")
-  elif 25.0 <= bmi  <= 29.9:
+elif 25.0 <= BMI  <= 29.9:
     print("Category: Over weight")
-  else:
+else:
     print("Category: Obese")
