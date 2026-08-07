@@ -77,7 +77,7 @@ print("\n=== PART 3: FUNCTIONS WITH RETURN VALUES ===")
 def add_numbers(a, b):
     """Adds two numbers and returns the result"""
     result = a + b
-    return result
+    return result # รีเทิร์นใช้สำหรับไพท่อนเพื่อคืนค่าให้ผู้ใช้ ทำแล้วยังไม่จบในตัวเองเลยคืนค่าให้ผู้ใช้เอาไปกระทำการต่อ
 
 print("Using functions that return values:")
 sum1 = add_numbers(5, 3)
@@ -116,6 +116,14 @@ print("Using return values in expressions:")
 result = multiply(4, 5) + square(3)
 print(f"multiply(4, 5) + square(3) = {multiply(4, 5)} + {square(3)} = {result}")
 print()
+# จงหาผลรันโปรแกรม Example 3: ด้านบน
+"""""""""
+result =  20 + 9 = 29
+
+
+
+
+"""""""""
 
 # =============================================================================
 # PART 4: DEFAULT PARAMETERS
@@ -145,12 +153,12 @@ create_profile("Charlie", 30, "USA")  # All specified
 print()
 
 # Example 3: Power function with default exponent
-def power(base, exponent=2):
+def power(base, exponent=2): #2
     """Calculates base raised to exponent (default: square)"""
     return base ** exponent
 
 print("Power function with defaults:")
-print(f"power(5) = {power(5)}")  # Square
+print(f"power(5) = {power(5)}")  # Square #5 เอาไปคูณกันอีก คือ 2 เป็ฯ25 เพราะไม่ได้ใส่ค่าจะใช้ค่าDefault
 print(f"power(5, 3) = {power(5, 3)}")  # Cube
 print(f"power(2, 4) = {power(2, 4)}")  # Fourth power
 print()
@@ -218,8 +226,8 @@ def is_strong_password(password):
     if len(password) < 8:
         return False, "Password too short (minimum 8 characters)"
     
-    has_letter = any(c.isalpha() for c in password)
-    has_number = any(c.isdigit() for c in password)
+    has_letter = any(c.isalpha() for c in password) #ตรวจสอบอัลฟาเบต
+    has_number = any(c.isdigit() for c in password) #ตรวจสอบตัวเลข
     
     if not has_letter:
         return False, "Password must contain at least one letter"

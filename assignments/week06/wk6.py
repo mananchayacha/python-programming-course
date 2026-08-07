@@ -1,0 +1,14 @@
+""" เขียน function ชื่อ create_user_profile ที่มีคุณสมบัติดังนี้:
+
+รับ parameters: username (จำเป็น), age (ค่าเริ่มต้น 18), premium (ค่าเริ่มต้น False)
+return string ที่จัดรูปแบบข้อมูลผู้ใช้
+รูปแบบ: "[username] (age: [age]) - [Premium User / Standard User]"
+
+"""
+def create_user_profile(username, age=18, premium= False):
+    status = "Premium User" if premium else "Standard User"
+    return f"{username} (age: {age}) - {status}"
+
+print (create_user_profile("Boonchoo", 40))
+print (create_user_profile("Manee"))
+print (create_user_profile("Piti", 23, True))
